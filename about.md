@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hey, guys. My name is Yijun Tian. You can also call me Eddie as well. Please be free to contact me if you have any suggestions and questions. I will be glad to hear your voice.
+Hey, guys. My name is Yijun Tian. You can also call me Eddie if you like. Please be free to contact me if you have any suggestions or questions. I will be glad to hear your voice.
 
 <ul>
     <li>Github:　　　<a href="https://github.com/meettyj">www.github.com/meettyj</a></li>
