@@ -1,0 +1,195 @@
+<html>
+<head>
+  <title>Evernote Export</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="Evernote Windows/303788 (zh-CN, DDL); Windows/10.0.14393 (Win64);"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="450"/>
+
+<div><span><div style="-evernote-webclip:true"><br/><div style="font-size: 16px; display: inline-block;"><div style="overflow-x:hidden;background:rgb(249, 249, 249);"><div style="font-family:Verdana, Arial, 宋体;font-size:12px;text-align:center;background:url(&quot;/ui/holder.gif&quot;) 50% 0% repeat-y rgb(249, 249, 249);"><div style="text-align:left;background:url(&quot;/ui/wrapper.gif&quot;) 0% 0% repeat-y transparent;"><div style="background:transparent;">
+
+<h1 style="padding:0px;border:0px;margin:15px 0px 0px 15px;font-family:微软雅黑;font-size:26px;font-weight:400;">jQuery 效果 - animate() 方法</h1>
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<p style="padding:0px;border:0px;line-height:150%;margin:0px;"><a href="http://www.w3school.com.cn/jquery/jquery_ref_effects.asp" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" title="jQuery 参考手册 - 效果">jQuery 效果参考手册</a></p>
+</div>
+
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<h2 style="margin:0px;padding:0px;border:0px;font-weight:bold;font-family:微软雅黑;font-size:14px;">实例</h2>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">改变 &quot;div&quot; 元素的高度：</p>
+
+<pre style="margin:10px 0px 0px;padding:10px;border:1px dotted rgb(119, 136, 85);font-family:Consolas, 'Courier New', Courier, monospace;width:685px;background:rgb(245, 245, 245);">$(&quot;.btn1&quot;).click(function(){
+  <code style="margin:0px;padding:0px;border:0px;font-family:Consolas, 'Courier New', Courier, monospace;color:rgb(0, 0, 221);">$(&quot;#box&quot;).animate({height:&quot;300px&quot;});</code>
+});
+</pre>
+
+<p style="overflow:hidden;margin:12px 0px 0px;line-height:150%;font-weight:normal;color:rgb(255, 255, 255);border:none;outline:0px;box-shadow:rgba(0, 0, 0, 0.117647) 0px 1px 3px, rgba(0, 0, 0, 0.239216) 0px 1px 2px;vertical-align:middle;padding:6px 16px;text-decoration:none;display:inline-block;text-align:center;transition:0.2s ease-out;cursor:pointer;white-space:nowrap;background-color:rgb(248, 142, 139);margin-bottom:0px;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_effect_animate" style="margin:0px;padding:0px;border:0px;background:transparent;text-decoration:none;color:rgb(255, 255, 255);" target="_blank">亲自试一试</a></p>
+</div>
+
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<h2 style="margin:0px;padding:0px;border:0px;font-weight:bold;font-family:微软雅黑;font-size:14px;">定义和用法</h2>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">animate() 方法执行 CSS 属性集的自定义动画。</p>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">该方法通过CSS样式将元素从一个状态改变为另一个状态。CSS属性值是逐渐改变的，这样就可以创建动画效果。</p>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">只有数字值可创建动画（比如 &quot;margin:30px&quot;）。字符串值无法创建动画（比如 &quot;background-color:red&quot;）。</p>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;"><span style="margin:0px;padding:0px;border:0px;font-weight:bold;">注释：</span>使用 &quot;+=&quot; 或 &quot;-=&quot; 来创建相对动画（relative animations）。</p>
+
+<h3 style="padding:0px;border:0px;font-weight:bold;margin:20px 0px 0px;font-size:12px;">语法 1</h3>
+
+<pre style="margin:10px 0px 0px;padding:10px;border:1px dotted rgb(119, 136, 85);font-family:Consolas, 'Courier New', Courier, monospace;width:685px;background:rgb(245, 245, 245);">$(<i style="margin:0px;padding:0px;border:0px;">selector</i>).animate(<i style="margin:0px;padding:0px;border:0px;">styles</i>,<i style="margin:0px;padding:0px;border:0px;">speed</i>,<i style="margin:0px;padding:0px;border:0px;">easing</i>,<i style="margin:0px;padding:0px;border:0px;">callback</i>)</pre>
+
+<table style="font-size:inherit;font-weight:inherit;font-style:inherit;font-variant:inherit;margin:0px;padding:0px;border:1px solid rgb(170, 170, 170);margin-top:10px;border-collapse:collapse;width:100%;">
+<tbody style="margin:0px;padding:0px;border:0px;"><tr style="margin:0px;padding:0px;border:0px;">
+<th style="margin:0px;padding:5px 15px 5px 6px;border:1px solid rgb(170, 170, 170);vertical-align:baseline;text-align:left;background-color:rgb(213, 213, 213);width:20%;">参数</th>
+<th style="margin:0px;padding:5px 15px 5px 6px;border:1px solid rgb(170, 170, 170);vertical-align:baseline;text-align:left;background-color:rgb(213, 213, 213);">描述</th>
+</tr>
+
+<tr style="margin:0px;padding:0px;border:0px;">
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);">styles</td>
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);">
+<p style="padding:0px;border:0px;line-height:150%;margin:0px;">必需。规定产生动画效果的 CSS 样式和值。</p>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">可能的 CSS 样式值（提供实例）：</p>
+
+<ul style="border:0px;list-style-type:none;margin:20px;padding:0px;">
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_backgroundposition" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">backgroundPosition</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_borderwidth" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">borderWidth</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_borderbottomwidth" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">borderBottomWidth</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_borderleftwidth" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">borderLeftWidth</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_borderrightwidth" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">borderRightWidth</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_bordertopwidth" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">borderTopWidth</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_borderspacing" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">borderSpacing</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_margin" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">margin</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_marginbottom" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">marginBottom</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_marginleft" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">marginLeft</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_marginright" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">marginRight</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_margintop" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">marginTop</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_outlinewidth" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">outlineWidth</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_padding" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">padding</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_paddingbottom" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">paddingBottom</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_paddingleft" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">paddingLeft</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_paddingright" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">paddingRight</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_paddingtop" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">paddingTop</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_height" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">height</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_width" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">width</a></li>				
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_maxheight" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">maxHeight</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_maxwidth" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">maxWidth</a></li>				
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_minheight" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">minHeight</a></li>
+		<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_minwidth" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">minWidth</a></li>				
+    	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_font" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">font</a></li>				
+    	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_fontsize" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">fontSize</a></li>				
+    	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_bottom" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">bottom</a></li>				
+    	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_left" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">left</a></li>				
+    	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_right" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">right</a></li>				
+    	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_top" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">top</a></li>				
+    	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_letterspacing" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">letterSpacing</a></li>
+    	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_wordspacing" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">wordSpacing</a></li>
+    	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_lineheight" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">lineHeight</a></li>    	
+    	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;"><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_eff_ani_textindent" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" target="_blank">textIndent</a></li>
+    </ul>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;"><span style="margin:0px;padding:0px;border:0px;font-weight:bold;">注释：</span>CSS 样式使用 DOM 名称（比如 &quot;fontSize&quot;）来设置，而非 CSS 名称（比如 &quot;font-size&quot;）。</p>
+</td>
+</tr>
+
+
+<tr style="margin:0px;padding:0px;border:0px;">
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);">speed</td>
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);">
+	<p style="padding:0px;border:0px;line-height:150%;margin:0px;">可选。规定动画的速度。默认是 &quot;normal&quot;。</p>
+	
+	<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">可能的值：</p>
+	
+	<ul style="border:0px;list-style-type:none;margin:20px;padding:0px;">
+	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;">毫秒 （比如 1500）</li>
+	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;">&quot;slow&quot;</li>
+	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;">&quot;normal&quot;</li>
+	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;">&quot;fast&quot;</li>
+	</ul>
+</td>
+</tr>
+
+<tr style="margin:0px;padding:0px;border:0px;">
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);">easing</td>
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);">
+	<p style="padding:0px;border:0px;line-height:150%;margin:0px;">可选。规定在不同的动画点中设置动画速度的 easing 函数。</p>
+
+	<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">内置的 easing 函数：</p>
+
+	<ul style="border:0px;list-style-type:none;margin:20px;padding:0px;">
+	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;">swing</li>
+	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;">linear</li>
+	</ul>
+
+	<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">扩展插件中提供更多 easing 函数。</p>
+</td>
+</tr>
+
+<tr style="margin:0px;padding:0px;border:0px;">
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);">callback</td>
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);">
+	<p style="padding:0px;border:0px;line-height:150%;margin:0px;">可选。animate 函数执行完之后，要执行的函数。</p>
+	
+	<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">如需学习更多有关 callback 的内容，请访问我们的 <a href="http://www.w3school.com.cn/jquery/jquery_callback.asp" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" title="jQuery Callback 函数">jQuery Callback</a> 这一章。</p>
+</td>
+</tr>
+</tbody></table>
+
+
+<h3 style="padding:0px;border:0px;font-weight:bold;margin:20px 0px 0px;font-size:12px;">语法 2</h3>
+
+<pre style="margin:10px 0px 0px;padding:10px;border:1px dotted rgb(119, 136, 85);font-family:Consolas, 'Courier New', Courier, monospace;width:685px;background:rgb(245, 245, 245);">$(<i style="margin:0px;padding:0px;border:0px;">selector</i>).animate(<i style="margin:0px;padding:0px;border:0px;">styles</i>,<i style="margin:0px;padding:0px;border:0px;">options</i>)</pre>
+
+<table style="font-size:inherit;font-weight:inherit;font-style:inherit;font-variant:inherit;margin:0px;padding:0px;border:1px solid rgb(170, 170, 170);margin-top:10px;border-collapse:collapse;width:100%;">
+<tbody style="margin:0px;padding:0px;border:0px;"><tr style="margin:0px;padding:0px;border:0px;">
+<th style="margin:0px;padding:5px 15px 5px 6px;border:1px solid rgb(170, 170, 170);vertical-align:baseline;text-align:left;background-color:rgb(213, 213, 213);width:20%;">参数</th>
+<th style="margin:0px;padding:5px 15px 5px 6px;border:1px solid rgb(170, 170, 170);vertical-align:baseline;text-align:left;background-color:rgb(213, 213, 213);">描述</th>
+</tr>
+
+<tr style="margin:0px;padding:0px;border:0px;">
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);"><i style="margin:0px;padding:0px;border:0px;">styles</i></td>
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);">必需。规定产生动画效果的 CSS 样式和值（同上）。</td>
+</tr>
+
+<tr style="margin:0px;padding:0px;border:0px;">
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);"><i style="margin:0px;padding:0px;border:0px;">options</i></td>
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);">
+	<p style="padding:0px;border:0px;line-height:150%;margin:0px;">可选。规定动画的额外选项。</p>
+	
+	<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">可能的值：</p>
+	
+	<ul style="border:0px;list-style-type:none;margin:20px;padding:0px;">
+	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;">speed - 设置动画的速度</li>
+	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;">easing - 规定要使用的 easing 函数</li>
+	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;">callback - 规定动画完成之后要执行的函数</li>
+	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;">step - 规定动画的每一步完成之后要执行的函数</li>
+	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;">queue - 布尔值。指示是否在效果队列中放置动画。如果为 false，则动画将立即开始</li>
+	<li style="border:0px;margin:0px;padding:0px;list-style-type:disc;">specialEasing - 来自 <i style="margin:0px;padding:0px;border:0px;">styles</i> 参数的一个或多个 CSS 属性的映射，以及它们的对应 easing 函数</li>
+	</ul>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<p style="padding:0px;border:0px;line-height:150%;margin:0px;"><a href="http://www.w3school.com.cn/jquery/jquery_ref_effects.asp" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" title="jQuery 参考手册 - 效果">jQuery 效果参考手册</a></p>
+</div>
+
+</div></div></div></div></div><br/></div></span>
+</div></body></html> 
