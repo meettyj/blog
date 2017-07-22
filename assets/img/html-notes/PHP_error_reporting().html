@@ -1,0 +1,112 @@
+<html>
+<head>
+  <title>Evernote Export</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="Evernote Windows/303788 (zh-CN, DDL); Windows/10.0.14393 (Win64);"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="433"/>
+
+<div><span><div style="-evernote-webclip:true"><br/><div style="font-size: 16px; display: inline-block;"><div style="overflow-x:hidden;background:rgb(249, 249, 249);"><div style="font-family:Verdana, Arial, 宋体;font-size:12px;text-align:center;background:url(&quot;/ui/holder.gif&quot;) 50% 0% repeat-y rgb(249, 249, 249);"><div style="text-align:left;background:url(&quot;/ui/wrapper.gif&quot;) 0% 0% repeat-y transparent;"><div style="background:transparent;">
+
+<h1 style="padding:0px;border:0px;margin:15px 0px 0px 15px;font-family:微软雅黑;font-size:26px;font-weight:400;">PHP error_reporting() 函数</h1>
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<p style="padding:0px;border:0px;line-height:150%;margin:0px;"><a href="http://www.w3school.com.cn/php/php_ref_error.asp" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" title="PHP Error 和 Logging 函数">PHP Error 和 Logging 函数</a></p>
+</div>
+
+
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<h2 style="margin:0px;padding:0px;border:0px;font-weight:bold;font-family:微软雅黑;font-size:14px;">实例</h2>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">规定不同的错误级别报告：</p>
+
+<pre style="margin:10px 0px 0px;padding:10px;border:1px dotted rgb(119, 136, 85);font-family:Consolas, 'Courier New', Courier, monospace;width:685px;background:rgb(245, 245, 245);">&lt;?php
+ <span style="margin:0px;padding:0px;border:0px;color:rgb(153, 153, 153);">// 关闭错误报告</span>
+ error_reporting(0);
+
+ <span style="margin:0px;padding:0px;border:0px;color:rgb(153, 153, 153);">// 报告 runtime 错误</span>
+ error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+ <span style="margin:0px;padding:0px;border:0px;color:rgb(153, 153, 153);">// 报告所有错误</span>
+ error_reporting(E_ALL);
+
+ <span style="margin:0px;padding:0px;border:0px;color:rgb(153, 153, 153);">// 等同 error_reporting(E_ALL);</span>
+ ini_set(&quot;error_reporting&quot;, E_ALL);
+
+ <span style="margin:0px;padding:0px;border:0px;color:rgb(153, 153, 153);">// 报告 E_NOTICE 之外的所有错误</span>
+ error_reporting(E_ALL &amp; ~E_NOTICE);
+?&gt; 
+</pre>
+</div>
+
+
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<h2 style="margin:0px;padding:0px;border:0px;font-weight:bold;font-family:微软雅黑;font-size:14px;">定义和用法</h2>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">error_reporting() 函数跪地你给应该报告何种 PHP 错误。</p>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">error_reporting() 函数能够在运行时设置 error_reporting 指令。</p>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">PHP 有诸多错误级别，使用该函数可以设置在脚本运行时的级别。如果没有设置可选参数 <i style="margin:0px;padding:0px;border:0px;">level</i>，error_reporting() 仅会返回当前的错误报告级别。</p>
+</div>
+
+
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<h2 style="margin:0px;padding:0px;border:0px;font-weight:bold;font-family:微软雅黑;font-size:14px;">语法</h2>
+
+<pre style="margin:10px 0px 0px;padding:10px;border:1px dotted rgb(119, 136, 85);font-family:Consolas, 'Courier New', Courier, monospace;width:685px;background:rgb(245, 245, 245);">error_reporting(<i style="margin:0px;padding:0px;border:0px;">level</i>);</pre>
+
+<table style="font-size:inherit;font-weight:inherit;font-style:inherit;font-variant:inherit;margin:0px;padding:0px;border:1px solid rgb(170, 170, 170);margin-top:10px;border-collapse:collapse;width:100%;">
+<tbody style="margin:0px;padding:0px;border:0px;"><tr style="margin:0px;padding:0px;border:0px;">
+<th style="margin:0px;padding:5px 15px 5px 6px;border:1px solid rgb(170, 170, 170);vertical-align:baseline;text-align:left;background-color:rgb(213, 213, 213);width:20%;">参数</th>
+<th style="margin:0px;padding:5px 15px 5px 6px;border:1px solid rgb(170, 170, 170);vertical-align:baseline;text-align:left;background-color:rgb(213, 213, 213);">描述</th>
+</tr>
+
+<tr style="margin:0px;padding:0px;border:0px;">
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);"><i style="margin:0px;padding:0px;border:0px;">level</i></td>
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);">
+<p style="padding:0px;border:0px;line-height:150%;margin:0px;">可选。规定新的 error_reporting 级别。可以是一个位掩码也可以是一个已命名的常量。</p>
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;"><span style="margin:0px;padding:0px;border:0px;font-weight:bold;">注释：</span>强烈建议使用已命名的常量，以确保兼容将来的版本。由于错误级别的添加、整数取值范围的增加，较久的基于整数的错误级别不会总是和预期的表现一致。</p>
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">可用的错误级别常量及其实际含义描述在了 predefined constants 中。</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<h2 style="margin:0px;padding:0px;border:0px;font-weight:bold;font-family:微软雅黑;font-size:14px;">技术细节</h2>
+
+<table style="font-size:inherit;font-weight:inherit;font-style:inherit;font-variant:inherit;margin:0px;padding:0px;border:1px solid rgb(170, 170, 170);margin-top:10px;border-collapse:collapse;width:100%;">
+<tbody style="margin:0px;padding:0px;border:0px;"><tr style="margin:0px;padding:0px;border:0px;">
+<th style="margin:0px;padding:5px 15px 5px 6px;border:1px solid rgb(170, 170, 170);vertical-align:baseline;text-align:left;background-color:rgb(213, 213, 213);width:20%;">返回值：</th>
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);">返回旧的 <i style="margin:0px;padding:0px;border:0px;">error_reporting</i> 级别，或者在 <i style="margin:0px;padding:0px;border:0px;">level</i> 参数未给出时返回当前的级别。</td>
+</tr>
+
+<tr style="margin:0px;padding:0px;border:0px;">
+<th style="margin:0px;padding:5px 15px 5px 6px;border:1px solid rgb(170, 170, 170);vertical-align:baseline;text-align:left;background-color:rgb(213, 213, 213);">PHP 版本：</th>
+<td style="margin:0px;padding:6px 15px 6px 6px;border:1px solid rgb(170, 170, 170);vertical-align:text-top;background-color:rgb(239, 239, 239);">4.0+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<p style="padding:0px;border:0px;line-height:150%;margin:0px;"><a href="http://www.w3school.com.cn/php/php_ref_error.asp" style="margin:0px;padding:0px;border:0px;text-decoration:underline;color:rgb(144, 11, 9);background:transparent;" title="PHP Error 和 Logging 函数">PHP Error 和 Logging 函数</a></p>
+</div>
+
+</div></div></div></div></div><br/></div></span>
+</div></body></html> 
