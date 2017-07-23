@@ -1,0 +1,132 @@
+<html>
+<head>
+  <title>Evernote Export</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="Evernote Windows/303788 (zh-CN, DDL); Windows/10.0.14393 (Win64);"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="432"/>
+
+<div><span><div style="-evernote-webclip:true"><br/><div style="font-size: 16px; display: inline-block;"><div style="overflow-x:hidden;background:rgb(249, 249, 249);"><div style="font-family:Verdana, Arial, 宋体;font-size:12px;text-align:center;background:url(&quot;/ui/holder.gif&quot;) 50% 0% repeat-y rgb(249, 249, 249);"><div style="text-align:left;background:url(&quot;/ui/wrapper.gif&quot;) 0% 0% repeat-y transparent;"><div style="background:transparent;">
+
+<h1 style="padding:0px;border:0px;margin:15px 0px 0px 15px;font-family:微软雅黑;font-size:26px;font-weight:400;">PHP Sessions</h1>
+
+<div style="border-top-style:solid;background:rgb(255, 255, 255);border:0px;height:29px;border-width:1px 0px;padding:20px 0px;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);width:710px;margin:0px 0px 0px 15px;">
+<ul style="margin:0px;padding:0px;border:0px;height:29px;width:230px;position:relative;background:url(&quot;/ui/bg.gif&quot;) 0px -570px no-repeat transparent;">
+<li style="top:0px;width:105px;border:0px;left:0px;display:block;height:29px;position:absolute;padding:0px;overflow:hidden;list-style:none;margin:0px;"><a href="http://www.w3school.com.cn/php/php_cookies.asp" style="margin:0px;padding:0px;border:0px;color:rgb(144, 11, 9);background:transparent;display:block;height:29px;text-decoration:none;text-indent:-9999px;" title="PHP Cookies">PHP Cookies</a></li>
+<li style="top:0px;width:105px;border:0px;left:125px;display:block;height:29px;position:absolute;padding:0px;overflow:hidden;list-style:none;margin:0px;"><a href="http://www.w3school.com.cn/php/php_mail.asp" style="margin:0px;padding:0px;border:0px;color:rgb(144, 11, 9);background:transparent;display:block;height:29px;text-decoration:none;text-indent:-9999px;" title="PHP 发送电子邮件">PHP E-mail</a></li>
+</ul>
+</div>
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<p style="padding:0px;border:0px;line-height:150%;margin:0px;"><strong style="margin:0px;padding:0px;border:0px;font-family:微软雅黑;font-size:14px;color:rgb(0, 0, 0);font-weight:800;">PHP session 变量用于存储有关用户会话的信息，或更改用户会话的设置。Session 变量保存的信息是单一用户的，并且可供应用程序中的所有页面使用。</strong></p>
+</div>
+
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<h2 style="margin:0px;padding:0px;border:0px;font-weight:bold;font-family:微软雅黑;font-size:14px;">PHP Session 变量</h2>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">当您运行一个应用程序时，您会打开它，做些更改，然后关闭它。这很像一次会话。计算机清楚你是谁。它知道你何时启动应用程序，并在何时终止。但是在因特网上，存在一个问题：服务器不知道你是谁以及你做什么，这是由于 HTTP 地址不能维持状态。</p>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">通过在服务器上存储用户信息以便随后使用，PHP session 解决了这个问题（比如用户名称、购买商品等）。不过，会话信息是临时的，在用户离开网站后将被删除。如果您需要永久储存信息，可以把数据存储在数据库中。</p>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">Session 的工作机制是：为每个访问者创建一个唯一的 id (UID)，并基于这个 UID 来存储变量。UID 存储在 cookie 中，亦或通过 URL 进行传导。</p>
+</div>
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<h2 style="margin:0px;padding:0px;border:0px;font-weight:bold;font-family:微软雅黑;font-size:14px;">开始 PHP Session</h2>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">在您把用户信息存储到 PHP session 中之前，首先必须启动会话。</p>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;"><span style="margin:0px;padding:0px;border:0px;font-weight:bold;">注释：</span>session_start() 函数必须位于 &lt;html&gt; 标签之前：</p>
+
+<pre style="margin:10px 0px 0px;padding:10px;border:1px dotted rgb(119, 136, 85);font-family:Consolas, 'Courier New', Courier, monospace;width:685px;background:rgb(245, 245, 245);">&lt;?php session_start(); ?&gt;
+
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">上面的代码会向服务器注册用户的会话，以便您可以开始保存用户信息，同时会为用户会话分配一个 UID。</p>
+</div>
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<h2 style="margin:0px;padding:0px;border:0px;font-weight:bold;font-family:微软雅黑;font-size:14px;">存储 Session 变量</h2>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">存储和取回 session 变量的正确方法是使用 PHP $_SESSION 变量：</p>
+
+<pre style="margin:10px 0px 0px;padding:10px;border:1px dotted rgb(119, 136, 85);font-family:Consolas, 'Courier New', Courier, monospace;width:685px;background:rgb(245, 245, 245);">&lt;?php
+session_start();
+// store session data
+$_SESSION['views']=1;
+?&gt;
+
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;?php
+//retrieve session data
+echo &quot;Pageviews=&quot;. $_SESSION['views'];
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">输出：</p>
+
+<pre style="margin:10px 0px 0px;padding:10px;border:1px dotted rgb(119, 136, 85);font-family:Consolas, 'Courier New', Courier, monospace;width:685px;background:rgb(245, 245, 245);">Pageviews=1</pre>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">在下面的例子中，我们创建了一个简单的 page-view 计数器。isset() 函数检测是否已设置 &quot;views&quot; 变量。如果已设置 &quot;views&quot; 变量，我们累加计数器。如果 &quot;views&quot; 不存在，则我们创建 &quot;views&quot; 变量，并把它设置为 1：</p>
+
+<pre style="margin:10px 0px 0px;padding:10px;border:1px dotted rgb(119, 136, 85);font-family:Consolas, 'Courier New', Courier, monospace;width:685px;background:rgb(245, 245, 245);">&lt;?php
+session_start();
+
+if(isset($_SESSION['views']))
+  $_SESSION['views']=$_SESSION['views']+1;
+
+else
+  $_SESSION['views']=1;
+echo &quot;Views=&quot;. $_SESSION['views'];
+?&gt;
+</pre>
+</div>
+
+<div style="border:0px;margin:0px 0px 0px 15px;padding:20px 0px;width:710px;border-width:1px 0px;border-top-style:solid;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);">
+<h2 style="margin:0px;padding:0px;border:0px;font-weight:bold;font-family:微软雅黑;font-size:14px;">终结 Session</h2>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">如果您希望删除某些 session 数据，可以使用 unset() 或 session_destroy() 函数。</p>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">unset() 函数用于释放指定的 session 变量：</p>
+
+<pre style="margin:10px 0px 0px;padding:10px;border:1px dotted rgb(119, 136, 85);font-family:Consolas, 'Courier New', Courier, monospace;width:685px;background:rgb(245, 245, 245);">&lt;?php
+unset($_SESSION['views']);
+?&gt;</pre>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;">您也可以通过 session_destroy() 函数彻底终结 session：</p>
+
+<pre style="margin:10px 0px 0px;padding:10px;border:1px dotted rgb(119, 136, 85);font-family:Consolas, 'Courier New', Courier, monospace;width:685px;background:rgb(245, 245, 245);">&lt;?php
+session_destroy();
+?&gt;</pre>
+
+<p style="padding:0px;border:0px;margin:12px 0px 0px;line-height:150%;"><span style="margin:0px;padding:0px;border:0px;font-weight:bold;">注释：</span>session_destroy() 将重置 session，您将失去所有已存储的 session 数据。</p>
+</div>
+
+<div style="border-top-style:solid;background:rgb(255, 255, 255);border:0px;height:29px;border-width:1px 0px;padding:20px 0px;border-top-color:rgb(170, 170, 170);border-bottom-style:solid;border-bottom-color:rgb(170, 170, 170);width:710px;margin:0px 0px 0px 15px;">
+<ul style="margin:0px;padding:0px;border:0px;height:29px;width:230px;position:relative;background:url(&quot;/ui/bg.gif&quot;) 0px -570px no-repeat transparent;">
+<li style="top:0px;width:105px;border:0px;left:0px;display:block;height:29px;position:absolute;padding:0px;overflow:hidden;list-style:none;margin:0px;"><a href="http://www.w3school.com.cn/php/php_cookies.asp" style="margin:0px;padding:0px;border:0px;color:rgb(144, 11, 9);background:transparent;display:block;height:29px;text-decoration:none;text-indent:-9999px;" title="PHP Cookies">PHP Cookies</a></li>
+<li style="top:0px;width:105px;border:0px;left:125px;display:block;height:29px;position:absolute;padding:0px;overflow:hidden;list-style:none;margin:0px;"><a href="http://www.w3school.com.cn/php/php_mail.asp" style="margin:0px;padding:0px;border:0px;color:rgb(144, 11, 9);background:transparent;display:block;height:29px;text-decoration:none;text-indent:-9999px;" title="PHP 发送电子邮件">PHP E-mail</a></li>
+</ul>
+</div>
+
+
+
+</div></div></div></div></div><br/></div></span>
+</div></body></html> 
