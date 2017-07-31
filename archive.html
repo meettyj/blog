@@ -13,6 +13,7 @@ title: Archive
     <div class="category-name">
       <h2>{{ category | first }}</h2>
     </div>
+    <!-- {% for post in category.last limit:5%} -->
     {% for post in category.last %}
 
     <div class="post_title">
@@ -23,6 +24,10 @@ title: Archive
     {% endfor %}
 
     {% endfor %}
+
+<!-- 分页链接 -->
+
+
 
   </section>
 
