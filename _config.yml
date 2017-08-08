@@ -13,9 +13,10 @@ port: 5000
 # Site settings
 title: Yijun Tian
 email: meettianyijun@gmail.com
-description:  # this means to ignore newlines until "baseurl:"
+description: think and code.
+# this means to ignore newlines until "baseurl:"
 # this will appear in your document head meta (for  Google search results) and in your feed.xml site description.
-  think and code.
+  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://github.com/meettyj/blog" # the base hostname & protocol for your site
 twitter_username:  
