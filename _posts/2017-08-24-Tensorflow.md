@@ -2,7 +2,7 @@
 layout: post
 title:   Tensorflow
 category: jekyll
-description: 
+description:  An open-source software library for machine learning across a range of tasks.
 ---
 
 <br />
