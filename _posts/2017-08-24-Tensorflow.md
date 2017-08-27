@@ -7,19 +7,18 @@ description:  An open-source software library for machine learning across a rang
 
 <br />
 
-# 查看python安装目录
+# How to run tensorflow tutorials?
 
-`import sys
-print(sys.path)`
+Take this one as an example:<br />
+<a href="https://github.com/tensorflow/models/blob/master/tutorials/rnn/ptb/ptb_word_lm.py">tensorflow tutorial code</a>
 
-# python 2 to 3
+Please git clone first.
+then launch the Git bash, go to the directory the document locate. (cd D:\models\tutorials\rnn\ptb)
 
-1. 打开windows的cmd，进入Python安装的根目录\Python27\Tools\Scripts。（2to3.py在此目录下）
-2. python 2to3.py -w 要转换的文件.py<br />
-【比如（python 2to3.py -w e:\pycode\perceptron.py）】<br />
-生成bak文件是备份文件，可直接改后缀变成相应的python文件即可。
+activate your tensorflow so you can run it. (source activate tensorflow)
 
-
+Now type in the follow code to give it a show.
+`python ptb_word_lm.py --data_path=D:/tensorflow/simple-examples/data/ --model=small`
 
 
 
