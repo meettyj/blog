@@ -20,7 +20,8 @@ activate your tensorflow so you can run it. (source activate tensorflow)
 Now type in the follow code to give it a show.
 `python ptb_word_lm.py --data_path=D:/tensorflow/simple-examples/data/ --model=small`
 
-
+<div align='center'>
+<img src="{{site.baseurl}}/assets/img/tensorflow/1.png" alt="tensorflow-1"/></div>
 
 
 
