@@ -20,4 +20,6 @@ print(sys.path)`<br /><br />
 生成bak文件是备份文件，可直接改后缀变成相应的python文件即可。
 
 
-
+# Exception
+<div align='center'>
+<img src="{{site.baseurl}}/assets/img/pythonNotes/1.png" alt="pythonNotes-1"/></div>
