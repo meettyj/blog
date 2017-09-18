@@ -38,4 +38,4 @@ excerpt_separator: <!--description-->
 #test-tyj
 paginate: 3
 paginate_path: "page:num"
-gems: [jekyll-paginate]
+#gems: [jekyll-paginate]

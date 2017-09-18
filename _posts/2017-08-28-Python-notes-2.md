@@ -17,7 +17,7 @@ description: Some notes for learning python.
 - x = MyClass()	
 - 实例化一个MyClass类的对象x
 
-
+  
 
 
 
